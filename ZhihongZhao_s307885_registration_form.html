@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<h1 class="title">Join Now</h1>
+	<hr>
+	<form>
+			<label class="label_t" for "surname"><b>Surname:</b></label><br>
+			<div><input type="text" placeholder="Enter Surname" name="Surname" required></div>
+
+			<label class="label_t" for "givenname"><b>Given name:</b></label><br>
+			<div>	<input type="text" placeholder="Enter Given name" name="givenname" required></div>
+
+			<label class="label_t" for "address"><b>Address:</b></label><br>
+			<div>	<input type="text" placeholder="Enter Address" name="address" required></div>
+
+			<label class="label_t" for "email"><b>Email:</b></label><br>
+			<div>	<input type="text" placeholder="Enter Email" name="email" required></div>
+
+			<label class="label_t" for "telephone"><b>Telephone number:</b></label><br>
+			<div>	<input type="text" placeholder="Enter telephone number" name="telephone" oninput="value=value.replace(/[^\d]/g,'')" required></div>
+
+			<div>	<label class="label_t" for "birth"><b>Birthdate:</b><label><br></div>
+			<div><input type="date" max="2019-03-28" min="1819-03-28" ></div>
+
+			<div>	<span class="text">Agree</span> <a href="https://www.cdu.edu.au/">Apolicy and Terms</a></div>
+
+			<div class="b_w">
+				<label class><input class="mui-switch mui-switch-animbg"type="checkbox"checked="checked"><span></span></label>
+			</div>
+		<div>
+			<button>Register Now</button>
+		</div>
+		<div>
+			<button class="b_w">Back</button>
+		</div>
+</form>
+</body>
+</html>
